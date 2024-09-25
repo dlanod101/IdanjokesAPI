@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    
+    <img src="{{image}}" alt="Idan Logo" class="center">
+    <h1>Idan Jokes API</h1>
+    <p class="intro">The Idan Jokes Api is a simple api made by myself, Donald (CouchPotato) to learn how to make apis. It has limited functionality for now but that will change... that's if I stick to this project till it's completion</p>
+    <div class="container">
+        <h2>USAGE</h2>
+        <p>Get a random idan joke in JSON format.</p>
+        <div class="code">
+            <p>GET <a href="#">https://idanjokes.vercel.app/jokes/random</a></p>
+        </div>
+        <br>
+        <p>Sample Response:</p>
+        <br>
+        <div class="sample">
+            {<br>
+            "id": "0",<br>
+            "content": "Idan doesn’t sleep. He waits."<br>
+            }
+        </div>
+        <br>
+        <p>Get a specific Joke by providing an id number</p>
+        <br>
+        <div class="code">
+            <p>GET <a href="#">https://idanjokes.vercel.app/jokes/34</a></p>
+        </div>
+        <br>
+        <p>Sample Response:</p>
+        <br>
+        <div class="sample">
+            {<br>
+            "id": "34",<br>
+            "content": "Idan doesn't need a visa. His passport stamps itself."<br>
+            }
+        </div>
+    </div>
+</body>
+</html>
