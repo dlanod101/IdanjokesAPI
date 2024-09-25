@@ -30,28 +30,6 @@ h1 {
     margin-left: 50px;
     margin-right: 50px;
     text-align: justify;
-  }
-
-@media (min-width: 1024px){
-    .intro{
-        margin-left: 20rem;
-        margin-right: 20rem;
-    }
-
-    .container{
-        margin-left: 20rem;
-        margin-right: 20rem;
-    }
-}
-
-@media (max-width: 600px){
-    .intro{
-        margin: 40px;
-    }
-    
-    .container{
-        margin: 40px;
-    }
 }
 
 .code{
@@ -64,18 +42,6 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.code p{
-    margin: 10px;
-    color: orangered;
-    font-weight: bolder;
-}
-
-.code a{
-    font-weight: lighter;
-    text-decoration:underline;
-    color: black;
 }
 
 .sample{
@@ -91,6 +57,52 @@ h1 {
     padding: 10px;
     line-height: 20px;
 }
+
+@media (min-width: 1024px){
+    .intro{
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+
+    .container{
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+}
+
+@media (max-width: 600px){
+    .intro{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .container{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sample{
+        width: 90%;
+    }
+    .code{
+        width: 90%;
+    }
+}
+
+
+.code p{
+    margin: 10px;
+    color: orangered;
+    font-weight: bolder;
+}
+
+.code a{
+    font-weight: lighter;
+    text-decoration:underline;
+    color: black;
+}
+
+
 
 p{
     margin-top: 10px;
