@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, render_template, url_for
 from random import randint
 import json, os
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 img = os.path.join('static', 'Image')
 
